@@ -1,0 +1,84 @@
+/* Import a futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at center, #111, #000);
+  color: #00fff7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #111;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 247, 0.4);
+  max-width: 400px;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #111;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 247, 0.4);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#status {
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px #000, 0 0 10px rgba(0, 255, 247, 0.2);
+  font-size: 2.8rem;
+  color: #00fff7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.cell:hover {
+  background: #222;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 247, 0.4);
+}
+
+button#restart {
+  padding: 12px 25px;
+  background: transparent;
+  color: #00fff7;
+  border: 2px solid #00fff7;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button#restart:hover {
+  background: #00fff7;
+  color: #000;
+  box-shadow: 0 0 10px #00fff7;
+}
